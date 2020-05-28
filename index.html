@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>永胜学院后台信息管理平台</title>
+	<link rel="stylesheet" href="static/layui-v2.5.6/layui/css/layui.css"  media="all">
+	<link href="static/login/style.css" rel="stylesheet" type="text/css" />
+	<script language="JavaScript" src="static/login/jquery.js"></script>
+	<!--<script src="static/login/cloud.js" type="text/javascript"></script>-->
+	<script src="static/layui-v2.5.6/layui/layui.all.js" charset="utf-8"></script>
+	<script language="javascript">
+		$(function(){
+			$('.loginbox').css({'position':'absolute','left':($(window).width()-692)/2});
+			$(window).resize(function(){  
+				$('.loginbox').css({'position':'absolute','left':($(window).width()-692)/2});
+			});
+			$("#loginbtn").click(function(){
+				if ($("#loginuser").val() == "") {
+					layer.tips('<b>请输入账号！</b>', '#loginuser', {tips: [1, '#ea5200']});
+					$("#loginuser").focus();
+					return false;
+				}
+				if ($("#loginpwd").val() == "") {
+					layer.tips('<b>请输入密码！</b>', '#loginpwd', {tips: [1, '#ea5200']});
+					$("#loginpwd").focus();
+					return false;
+				}
+				location.href = "html/main.html";
+			})
+			$("#registebtn").click(function(){
+				location.href = "html/register.html";
+			})
+		});  
+	</script> 
+</head>
+<body style="background-color:#1c77ac; background-image:url(static/images/light.png); background-repeat:no-repeat; background-position:center top; overflow:hidden;">
+    <div id="mainBody">
+      <div id="cloud1" class="cloud"></div>
+      <div id="cloud2" class="cloud"></div>
+    </div>  
+	<div class="logintop">    
+		<span>欢迎登录永胜学院后台信息管理平台</span>    
+    </div>
+    <div class="loginbody">
+		<!--<span class="systemlogo"></span>-->
+		<div align="center">
+			<img src="static/images/logo_tm.png" width="150" height="150" style="margin-top:30px;"/>
+		</div>
+		<div class="loginbox">
+			<ul>
+				<li><input id="loginuser" type="text" class="loginuser" placeholder="账号"/></li>
+				<li><input id="loginpwd" type="password" class="loginpwd" placeholder="密码"/></li>
+				<li>
+					<input id="loginbtn" type="button" class="loginbtn" value="登 录"/>&nbsp;&nbsp;&nbsp;&nbsp;
+					<input id="registebtn" type="button" class="loginbtn" value="注 册"/>
+				</li>
+			</ul>
+		</div>
+    </div>
+    <div class="loginbm">Copyright © 2020 - 2021 <a href="http://www.bit.edu.cn/" target="_blank">北京理工大学</a>19级计算机B班斗地组开发组  All Rights Reserved.</div> 
+</body>
+
+</html>
