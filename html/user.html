@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>北京理工大学永胜学院信息管理系统</title>
+		<title>永胜学院信息管理系统</title>
 		<meta name="renderer" content="webkit">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link rel="stylesheet" href="../static/layui-v2.5.6/layui/css/layui.css"  media="all">
 		<style>
 			table tbody tr:nth-child(even) {
-				background: #f2f2f2;
+				background: #f0f9fd;
 			}
 			table tbody tr:nth-child(odd):hover {
 				background: #f0fdf3;
@@ -68,13 +68,13 @@
 								</div>
 							</div>
 							<div class="layui-inline">
-								<button type="button" class="layui-btn" onclick="search(0)">查询</button>
+								<button type="button" class="layui-btn layui-btn-primary" onclick="search(0)">查询</button>
 								<button type="button" class="layui-btn layui-btn-primary" onclick="search(1)">重置</button>
 							</div>
 						</div>
 						<table class="layui-table" id="contentTable">
 							<thead>
-								<tr>
+								<tr style="background:#f0f9fd;">
 									<th>序号</th>
 									<th>姓名</th>
 									<th>账号</th>
@@ -101,8 +101,8 @@
 									<td style="display:none;">123456</td>
 									<td style="display:none;">无</td>
 									<td>
-										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="编辑" onclick="update(1)"><i class="layui-icon"></i></button>
-										<button type="button" class="layui-btn layui-btn-danger layui-btn-sm" title="删除" onclick="deleteLine(1)"><i class="layui-icon"></i></button>
+										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="修改" onclick="update(1)">修改</button>
+										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="删除" onclick="deleteLine(1)">删除</button>
 									</td>
 								</tr>
 								<tr class="line_2">
@@ -118,8 +118,8 @@
 									<td style="display:none;">123456</td>
 									<td style="display:none;">无</td>
 									<td>
-										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="编辑" onclick="update(2)"><i class="layui-icon"></i></button>
-										<button type="button" class="layui-btn layui-btn-danger layui-btn-sm" title="删除" onclick="deleteLine(2)"><i class="layui-icon"></i></button>
+										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="修改" onclick="update(2)">修改</button>
+										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="删除" onclick="deleteLine(2)">删除</button>
 									</td>
 								</tr>
 								<tr class="line_3">
@@ -135,8 +135,8 @@
 									<td style="display:none;">123456</td>
 									<td style="display:none;">无</td>
 									<td>
-										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="编辑" onclick="update(3)"onclick="update(1)"><i class="layui-icon"></i></button>
-										<button type="button" class="layui-btn layui-btn-danger layui-btn-sm" title="删除" onclick="deleteLine(3)"><i class="layui-icon"></i></button>
+										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="修改" onclick="update(3)">修改</button>
+										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="删除" onclick="deleteLine(3)">删除</button>
 									</td>
 								</tr>
 								<tr class="line_4">
@@ -152,8 +152,8 @@
 									<td style="display:none;">123456</td>
 									<td style="display:none;">无</td>
 									<td>
-										<button class="layui-btn layui-btn-primary layui-btn-sm" title="编辑" onclick="update(4)"><i class="layui-icon"></i></button>
-										<button type="button" class="layui-btn layui-btn-danger layui-btn-sm" title="删除" onclick="deleteLine(4)"><i class="layui-icon"></i></button>
+										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="修改" onclick="update(4)">修改</button>
+										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="删除" onclick="deleteLine(4)">删除</button>
 									</td>
 								</tr>
 								<tr class="line_5">
@@ -169,8 +169,8 @@
 									<td style="display:none;">123456</td>
 									<td style="display:none;">无</td>
 									<td>
-										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="编辑" onclick="update(5)"><i class="layui-icon"></i></button>
-										<button type="button" class="layui-btn layui-btn-danger layui-btn-sm" title="删除" onclick="deleteLine(5)"><i class="layui-icon"></i></button>
+										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="修改" onclick="update(5)">修改</button>
+										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="删除" onclick="deleteLine(5)">删除</button>
 									</td>
 								</tr>
 								<tr class="line_6">
@@ -186,8 +186,8 @@
 									<td style="display:none;">123456</td>
 									<td style="display:none;">无</td>
 									<td>
-										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="编辑" onclick="update(6)"><i class="layui-icon"></i></button>
-										<button type="button" class="layui-btn layui-btn-danger layui-btn-sm" title="删除" onclick="deleteLine(6)"><i class="layui-icon"></i></button>
+										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="修改" onclick="update(6)">修改</button>
+										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="删除" onclick="deleteLine(6)">删除</button>
 									</td>
 								</tr>
 								<tr class="line_7">
@@ -203,25 +203,8 @@
 									<td style="display:none;">123456</td>
 									<td style="display:none;">无</td>
 									<td>
-										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="编辑" onclick="update(7)"><i class="layui-icon"></i></button>
-										<button type="button" class="layui-btn layui-btn-danger layui-btn-sm" title="删除" onclick="deleteLine(7)"><i class="layui-icon"></i></button>
-									</td>
-								</tr>
-								<tr class="line_8">
-									<td>8</td>
-									<td>刘嵩</td>
-									<td>liusong</td>
-									<td>男</td>
-									<td>1988-06-22</td>
-									<td>广州</td>
-									<td>13563787211</td>
-									<td>13563787211@163.com</td>
-									<td>前台用户</td>
-									<td style="display:none;">123456</td>
-									<td style="display:none;">无</td>
-									<td>
-										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="编辑" onclick="update(8)"><i class="layui-icon"></i></button>
-										<button type="button" class="layui-btn layui-btn-danger layui-btn-sm" title="删除" onclick="deleteLine(8)"><i class="layui-icon"></i></button>
+										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="修改" onclick="update(7)">修改</button>
+										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="删除" onclick="deleteLine(7)">删除</button>
 									</td>
 								</tr>
 							</tbody>
@@ -237,21 +220,21 @@
 						  <div class="layui-form-item">
 							<label class="layui-form-label"><span style="color:red;">* </span>姓名</label>
 							<div class="layui-input-block">
-							  <input type="text" name="name" required  lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input">
+							  <input type="text" name="name" required  lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input" style="width:300px;">
 							</div>
 						  </div>
 						  <div class="layui-form-item">
 							<label class="layui-form-label"><span style="color:red;">* </span>账号</label>
 							<div class="layui-input-block">
-							  <input type="text" name="username" required  lay-verify="required" placeholder="请输入账号" autocomplete="off" class="layui-input">
+							  <input type="text" name="username" required  lay-verify="required" placeholder="请输入账号" autocomplete="off" class="layui-input" style="width:300px;">
 							</div>
 						  </div>
 						  <div class="layui-form-item">
 							<label class="layui-form-label"><span style="color:red;">* </span>密码</label>
 							<div class="layui-input-inline">
-							  <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+							  <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input" style="width:300px;">
 							</div>
-							<div class="layui-form-mid layui-word-aux">>=6位</div>
+							<!--<div class="layui-form-mid layui-word-aux">>=6位</div>-->
 						  </div>
 						   <div class="layui-form-item">
 							<label class="layui-form-label"><span style="color:red;">* </span>性别</label>
@@ -263,12 +246,12 @@
 						   <div class="layui-form-item">
 							<label class="layui-form-label"><span style="color:red;">* </span>出生年月</label>
 							<div class="layui-input-inline">
-								<input type="text" name="birthdate" id="date" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input">
+								<input type="text" name="birthdate" id="date" lay-verify="date" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input" style="width:300px;">
 							</div>
 						  </div>
 						  <div class="layui-form-item">
 							<label class="layui-form-label"><span style="color:red;">* </span>所在城市</label>
-							<div class="layui-input-block">
+							<div class="layui-input-block" style="width:300px;">
 							  <select name="city" id="city" lay-verify="required">
 								<option value=""></option>
 								<option value="1">北京</option>
@@ -283,7 +266,7 @@
 							<div class="layui-inline">
 							  <label class="layui-form-label"><span style="color:red;">* </span>手机号</label>
 							  <div class="layui-input-inline">
-								<input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" class="layui-input">
+								<input type="tel" name="phone" lay-verify="required|phone" autocomplete="off" class="layui-input" style="width:300px;">
 							  </div>
 							</div>
 						  </div>
@@ -291,7 +274,7 @@
 							<div class="layui-inline">
 							  <label class="layui-form-label"><span style="color:red;">* </span>邮箱</label>
 							  <div class="layui-input-inline">
-								<input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input">
+								<input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input" style="width:300px;">
 							  </div>
 							</div>
 						  </div>
@@ -305,12 +288,12 @@
 						  <div class="layui-form-item layui-form-text">
 							<label class="layui-form-label">备注</label>
 							<div class="layui-input-block">
-							  <textarea name="remark" placeholder="请输入内容" class="layui-textarea"></textarea>
+							  <textarea name="remark" placeholder="请输入内容" class="layui-textarea" style="width:300px;"></textarea>
 							</div>
 						  </div>
 						  <div class="layui-form-item">
 							<div class="layui-input-block">
-							  <button class="layui-btn" lay-submit lay-filter="formDemo">保存</button>
+							  <button class="layui-btn layui-btn-primary" lay-submit lay-filter="formDemo">保存</button>
 							  <button type="reset" class="layui-btn layui-btn-primary" id="resetBtn">重置</button>
 							  <button type="button" class="layui-btn layui-btn-primary" onclick="$('#resetBtn,#tab1').click();">返回</button>
 							</div>
@@ -333,6 +316,7 @@
 				// 总页数低于页码总数
 				laypage.render({
 					elem: 'page'
+					,theme: '#4198ca'
 					,count: 10 // 数据总数
 				});
 			});
@@ -400,8 +384,8 @@
 						html += "<td style='display:none;'>"+password+"</td>";
 						html += "<td style='display:none;'>"+remark+"</td>";
 						html += "<td>";
-						html += "<button type='button' class='layui-btn layui-btn-primary layui-btn-sm' title='编辑' onclick='update("+dataCount+")'><i class='layui-icon'></i></button>";
-						html += "<button type='button' class='layui-btn layui-btn-danger layui-btn-sm' title='删除' onclick='deleteLine("+dataCount+")'><i class='layui-icon'></i></button>";
+						html += "<button type='button' class='layui-btn layui-btn-primary layui-btn-sm' title='修改' onclick='update("+dataCount+")'>修改</button>";
+						html += "<button type='button' class='layui-btn layui-btn-primary layui-btn-sm' title='删除' onclick='deleteLine("+dataCount+")'>删除</button>";
 						html += "</td>";
 						html += "</tr>";
 						$("#contentTable tbody").append(html);

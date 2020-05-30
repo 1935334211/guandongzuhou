@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>北京理工大学永胜学院信息管理系统</title>
+		<title>永胜学院信息管理系统</title>
 		<meta name="renderer" content="webkit">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link rel="stylesheet" href="../static/layui-v2.5.6/layui/css/layui.css"  media="all">
 		<style>
 			table tbody tr:nth-child(even) {
-				background: #f2f2f2;
+				background: #f0f9fd;
 			}
 			table tbody tr:nth-child(odd):hover {
 				background: #f0fdf3;
@@ -73,13 +73,13 @@
 								</div>
 							</div>
 							<div class="layui-inline">
-								<button type="button" class="layui-btn" onclick="search(0)">查询</button>
+								<button type="button" class="layui-btn layui-btn-primary" onclick="search(0)">查询</button>
 								<button type="button" class="layui-btn layui-btn-primary" onclick="search(1)">重置</button>
 							</div>
 						</div>
 						<table class="layui-table" id="contentTable">
 							<thead>
-								<tr>
+								<tr style="background:#f0f9fd;">
 									<th>序号</th>
 									<th>产品图片</th>
 									<th>产品名称</th>
@@ -106,10 +106,10 @@
 									<td>前端</td>
 									<td><div id="score1"></div></td>
 									<td>很喜欢，希望有后续课程。</td>
-									<td>测试用户</td>
+									<td>前台用户</td>
 									<td>2020-05-25</td>
 									<td>
-										<button type="button" class="layui-btn layui-btn-danger layui-btn-sm" title="删除" onclick="deleteLine(1)"><i class="layui-icon"></i></button>
+										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="删除" onclick="deleteLine(1)">删除</button>
 									</td>
 								</tr>
 								<tr class="line_2">
@@ -125,10 +125,10 @@
 									<td>数学</td>
 									<td><div id="score2"></div></td>
 									<td>每次实验课的体系性很强。</td>
-									<td>测试用户</td>
+									<td>前台用户</td>
 									<td>2020-05-25</td>
 									<td>
-										<button type="button" class="layui-btn layui-btn-danger layui-btn-sm" title="删除" onclick="deleteLine(2)"><i class="layui-icon"></i></button>
+										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="删除" onclick="deleteLine(2)">删除</button>
 									</td>
 								</tr>
 								<tr class="line_3">
@@ -144,10 +144,10 @@
 									<td>大学英语</td>
 									<td><div id="score3"></div></td>
 									<td>非常棒的课程，顶顶顶。</td>
-									<td>测试用户</td>
+									<td>前台用户</td>
 									<td>2020-05-25</td>
 									<td>
-										<button type="button" class="layui-btn layui-btn-danger layui-btn-sm" title="删除" onclick="deleteLine(3)"><i class="layui-icon"></i></button>
+										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="删除" onclick="deleteLine(3)">删除</button>
 									</td>
 								</tr>
 								<tr class="line_4">
@@ -163,10 +163,10 @@
 									<td>计算机系统</td>
 									<td><div id="score4"></div></td>
 									<td>可以作为入门的学习资料之一。</td>
-									<td>测试用户</td>
+									<td>前台用户</td>
 									<td>2020-05-25</td>
 									<td>
-										<button type="button" class="layui-btn layui-btn-danger layui-btn-sm" title="删除" onclick="deleteLine(4)"><i class="layui-icon"></i></button>
+										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="删除" onclick="deleteLine(4)">删除</button>
 									</td>
 								</tr>
 								<tr class="line_5">
@@ -182,10 +182,10 @@
 									<td>软件工程</td>
 									<td><div id="score5"></div></td>
 									<td>不能快速理解并用到题目中去 有待改进！</td>
-									<td>测试用户</td>
+									<td>前台用户</td>
 									<td>2020-05-25</td>
 									<td>
-										<button type="button" class="layui-btn layui-btn-danger layui-btn-sm" title="删除" onclick="deleteLine(5)"><i class="layui-icon"></i></button>
+										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="删除" onclick="deleteLine(5)">删除</button>
 									</td>
 								</tr>
 							</tbody>
@@ -241,6 +241,7 @@
 				// 总页数低于页码总数
 				laypage.render({
 					elem: 'page'
+					,theme: '#4198ca'
 					,count: 10 // 数据总数
 				});
 			});

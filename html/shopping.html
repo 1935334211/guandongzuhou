@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>北京理工大学永胜学院信息管理系统</title>
+		<title>永胜学院信息管理系统</title>
 		<meta name="renderer" content="webkit">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link rel="stylesheet" href="../static/layui-v2.5.6/layui/css/layui.css"  media="all">
 		<style>
 			table tbody tr:nth-child(even) {
-				background: #f2f2f2;
+				background: #f0f9fd;
 			}
 			table tbody tr:nth-child(odd):hover {
 				background: #f0fdf3;
@@ -73,13 +73,13 @@
 								</div>
 							</div>
 							<div class="layui-inline">
-								<button type="button" class="layui-btn" onclick="search(0)">查询</button>
+								<button type="button" class="layui-btn layui-btn-primary" onclick="search(0)">查询</button>
 								<button type="button" class="layui-btn layui-btn-primary" onclick="search(1)">重置</button>
 							</div>
 						</div>
 						<table class="layui-table" id="contentTable">
 							<thead>
-								<tr>
+								<tr style="background:#f0f9fd;">
 									<th>序号</th>
 									<th>产品图片</th>
 									<th>产品名称</th>
@@ -103,11 +103,11 @@
 									<td>Javascript设计模式</td>
 									<td>电子书</td>
 									<td>前端</td>
-									<td style="font-weight:bold;color:#ffb800;font-size:16px;">3.8</td>
-									<td>测试用户</td>
+									<td style="font-weight:bold;color:#ffb800;font-size:16px;">3</td>
+									<td>前台用户</td>
 									<td>2020-05-25</td>
 									<td>
-										<button type="button" class="layui-btn layui-btn-danger layui-btn-sm" title="删除" onclick="deleteLine(1)"><i class="layui-icon"></i></button>
+										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="删除" onclick="deleteLine(1)">删除</button>
 									</td>
 								</tr>
 								<tr class="line_2">
@@ -121,11 +121,11 @@
 									<td>概率论与数理统计</td>
 									<td>电子书</td>
 									<td>数学</td>
-									<td style="font-weight:bold;color:#ffb800;font-size:16px;">5.2</td>
-									<td>测试用户</td>
+									<td style="font-weight:bold;color:#ffb800;font-size:16px;">5</td>
+									<td>前台用户</td>
 									<td>2020-05-25</td>
 									<td>
-										<button type="button" class="layui-btn layui-btn-danger layui-btn-sm" title="删除" onclick="deleteLine(2)"><i class="layui-icon"></i></button>
+										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="删除" onclick="deleteLine(2)">删除</button>
 									</td>
 								</tr>
 								<tr class="line_3">
@@ -139,11 +139,11 @@
 									<td>大学英语综合教程2</td>
 									<td>电子书</td>
 									<td>大学英语</td>
-									<td style="font-weight:bold;color:#ffb800;font-size:16px;">4.1</td>
-									<td>测试用户</td>
+									<td style="font-weight:bold;color:#ffb800;font-size:16px;">4</td>
+									<td>前台用户</td>
 									<td>2020-05-25</td>
 									<td>
-										<button type="button" class="layui-btn layui-btn-danger layui-btn-sm" title="删除" onclick="deleteLine(3)"><i class="layui-icon"></i></button>
+										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="删除" onclick="deleteLine(3)">删除</button>
 									</td>
 								</tr>
 								<tr class="line_4">
@@ -157,11 +157,11 @@
 									<td>计算机系统基础</td>
 									<td>视频</td>
 									<td>计算机系统</td>
-									<td style="font-weight:bold;color:#ffb800;font-size:16px;">3.2</td>
-									<td>测试用户</td>
+									<td style="font-weight:bold;color:#ffb800;font-size:16px;">8</td>
+									<td>前台用户</td>
 									<td>2020-05-25</td>
 									<td>
-										<button type="button" class="layui-btn layui-btn-danger layui-btn-sm" title="删除" onclick="deleteLine(4)"><i class="layui-icon"></i></button>
+										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="删除" onclick="deleteLine(4)">删除</button>
 									</td>
 								</tr>
 								<tr class="line_5">
@@ -175,11 +175,11 @@
 									<td>软件工程</td>
 									<td>视频</td>
 									<td>软件工程</td>
-									<td style="font-weight:bold;color:#ffb800;font-size:16px;">4.6</td>
-									<td>测试用户</td>
+									<td style="font-weight:bold;color:#ffb800;font-size:16px;">6</td>
+									<td>前台用户</td>
 									<td>2020-05-25</td>
 									<td>
-										<button type="button" class="layui-btn layui-btn-danger layui-btn-sm" title="删除" onclick="deleteLine(5)"><i class="layui-icon"></i></button>
+										<button type="button" class="layui-btn layui-btn-primary layui-btn-sm" title="删除" onclick="deleteLine(5)">删除</button>
 									</td>
 								</tr>
 							</tbody>
